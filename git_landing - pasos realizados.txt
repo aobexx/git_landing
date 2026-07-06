@@ -1,0 +1,100 @@
+
+
+1
+destro del directorio ..\git_landing
+- index.html
+- style.css
+> Inicializar un repositorio de git dentro del proyecto (dentro de la carpeta actual). 
+git init
+
+(agregue index.html a VSC)
+> Agregarlos archivos a stage 
+git add . 
+
+> Reviso estado
+git status
+"On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+"
+> Generar nuestro primer commit
+git commit -m "empiezo aca"
+"[master (root-commit) ae660e2] empiezo aca
+ 2 files changed, 81 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+"
+
+(git log
+commit ae660e23b2b512dcf325c78de38538ca720e7e0e (HEAD -> master)
+Author: aobexx <aobexx@gmail.com>
+Date:   Sun Jul 5 23:33:59 2026 -0400
+
+    empiezo aca)
+
+
+> crear una nueva rama (development) en el repositorio
+git checkout -b "development"
+"Switched to a new branch 'development'
+"
+
+
+(git log
+commit ae660e23b2b512dcf325c78de38538ca720e7e0e (HEAD -> development, master)
+Author: aobexx <aobexx@gmail.com>
+Date:   Sun Jul 5 23:33:59 2026 -0400
+
+    empiezo aca)
+
+git add .
+
+> 
+git commit -m "empiezo aca"
+
+
+(git log
+commit 25e9ad1817e7c0b85fff503d56137d85baa89a6d (HEAD -> development)
+Author: aobexx <aobexx@gmail.com>
+Date:   Sun Jul 5 23:43:02 2026 -0400
+
+    funcionalidad click redirige a GitHub personal
+
+commit ae660e23b2b512dcf325c78de38538ca720e7e0e (master)
+Author: aobexx <aobexx@gmail.com>
+Date:   Sun Jul 5 23:33:59 2026 -0400
+
+    empiezo aca)
+
+(git branch
+* development
+  master)
+
+>
+git remote add origin https://github.com/aobexx/git_landing.git
+
+> git push -u origin development
+git push -u origin development
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.36 KiB | 464.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/aobexx/git_landing.git
+ * [new branch]      development -> development
+branch 'development' set up to track 'origin/development'.
+
+
+versiones commit compromiso (cerrar caja y etiquetar)
+git commit -m "funcionalidad click redirige a GitHub personal"
+
+revisar
+git log
+
+

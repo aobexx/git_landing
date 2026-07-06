@@ -74,10 +74,10 @@ Date:   Sun Jul 5 23:33:59 2026 -0400
 * development
   master)
 
->
+> Conexión con Github
 git remote add origin https://github.com/aobexx/git_landing.git
 
-> git push -u origin development
+> Subir cambios
 git push -u origin development
 Enumerating objects: 7, done.
 Counting objects: 100% (7/7), done.
@@ -90,11 +90,64 @@ To https://github.com/aobexx/git_landing.git
  * [new branch]      development -> development
 branch 'development' set up to track 'origin/development'.
 
-
-versiones commit compromiso (cerrar caja y etiquetar)
-git commit -m "funcionalidad click redirige a GitHub personal"
-
-revisar
+> Comprobar estado
 git log
+commit 25e9ad1817e7c0b85fff503d56137d85baa89a6d (HEAD -> development, origin/development)
+Author: aobexx <aobexx@gmail.com>
+Date:   Sun Jul 5 23:43:02 2026 -0400
+
+    funcionalidad click redirige a GitHub personal
+
+commit ae660e23b2b512dcf325c78de38538ca720e7e0e (master)
+Author: aobexx <aobexx@gmail.com>
+Date:   Sun Jul 5 23:33:59 2026 -0400
+
+    empiezo aca
+
+>
+git add .
+
+>
+git status
+On branch development
+Your branch is up to date with 'origin/development'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git_landing - pantallazos resultados.png
+        new file:   git_landing - pasos realizados.txt
+
+>
+git commit -m "agrego archivos adicionales"
+[development c628270] agrego archivos adicionales
+ 2 files changed, 100 insertions(+)
+ create mode 100644 git_landing - pantallazos resultados.png
+ create mode 100644 git_landing - pasos realizados.txt
+
+>
+git branch
+* development
+  master
+
+>
+git push origin development
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 55.71 KiB | 7.96 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/aobexx/git_landing.git
+   25e9ad1..c628270  development -> development
+
+Enlace
+https://github.com/aobexx/git_landing
+
+>
+git add .
+
+>
+git commit -m "final"
 
 
+------
